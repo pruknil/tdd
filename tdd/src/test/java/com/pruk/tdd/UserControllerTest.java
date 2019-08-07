@@ -19,6 +19,10 @@ public class UserControllerTest {
 	@Test
 	public void test() {
 		UserResponse response = restTemplate.getForObject("/user/1", UserResponse.class);
+
+		assertEquals(0, response.getId());
+		assertEquals(null, response.getEmail());
+		assertEquals(null, response.getName());
 		
 		
 //		assertEquals(1, response.getId());

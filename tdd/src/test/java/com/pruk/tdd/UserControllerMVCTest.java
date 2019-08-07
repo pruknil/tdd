@@ -47,7 +47,10 @@ public class UserControllerMVCTest {
 		String resultJson = result.getResponse().getContentAsString();
 		ObjectMapper mapper = new ObjectMapper();
 		UserResponse response = mapper.readValue(resultJson, UserResponse.class);
-		//assertEquals(userResponse, response);
+		assertEquals(1, response.getId());
+		assertEquals("pruknil@gmail.com",response.getEmail());
+		assertEquals("Pruk",response.getName());
+
 
 	}
 
