@@ -1,4 +1,4 @@
-package com.pruk.tdd.model;
+package com.pruk.tdd;
 
 public class UserResponse {
 	private int id;

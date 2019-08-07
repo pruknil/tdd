@@ -28,4 +28,6 @@ public class UserRepositoryTest {
 		assertTrue(found.isPresent());
 		assertEquals(entity,found.get());
 	}
+	
+
 }
